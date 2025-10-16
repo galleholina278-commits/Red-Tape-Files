@@ -44,7 +44,7 @@ nav a.active {
 }
 
 .hero {
-  background-image: url(https://images.pexels.com/photos/923681/pexels-photo-923681.jpeg);
+  background-image: url('https://images.pexels.com/photos/923681/pexels-photo-923681.jpeg');
   background-size: cover;
   background-position: center;
   height: 300px;
