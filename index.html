@@ -4,151 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Red Tape Files | True Crime</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #0a0a0a;
-      color: #fff;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
-      background-color: #000;
-    }
-
-    header h1 {
-      font-size: 1.2rem;
-      letter-spacing: 2px;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffcc00;
-    }
-
-    .hero {
-      background-image: url(https://images.pexels.com/photos/923681/pexels-photo-923681.jpeg);
-      background-size: cover;
-      background-position: center;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      padding-left: 50px;
-      position: relative;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0));
-    }
-
-    .hero-content {
-      position: relative;
-      max-width: 600px;
-    }
-
-    .hero-content h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
-    .hero-content p {
-      color: #ccc;
-      font-size: 1rem;
-      margin-bottom: 20px;
-    }
-
-    .buttons a {
-      display: inline-block;
-      background-color: #ffcc00;
-      color: #000;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-weight: 600;
-      text-decoration: none;
-      margin-right: 10px;
-      transition: background 0.3s;
-    }
-
-    .buttons a:hover {
-      background-color: #e0b700;
-    }
-
-    .cases {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 40px;
-      flex-wrap: wrap;
-    }
-
-    .case-card {
-      background: #1a1a1a;
-      border-radius: 10px;
-      width: 250px;
-      overflow: hidden;
-      transition: transform 0.3s;
-    }
-
-    .case-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .case-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .case-info {
-      padding: 15px;
-    }
-
-    .case-info h3 {
-      margin: 0 0 10px;
-      font-size: 1.1rem;
-      color: #ffcc00;
-    }
-
-    .case-info p {
-      color: #bbb;
-      font-size: 0.9rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #000;
-      color: #666;
-      font-size: 0.8rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
     <h1>RED TAPE FILES</h1>
     <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Casos y criminales</a>
-      <a href="#">Línea temporal</a>
-      <a href="#">Juicios</a>
-      <a href="#">Psicología criminal</a>
+      <a href="index.html" class="active">Inicio</a>
+      <a href="casos.html">Casos y criminales</a>
+      <a href="linea-temporal.html">Línea temporal</a>
+      <a href="juicios.html">Juicios</a>
+      <a href="psicologia-criminal.html">Psicología criminal</a>
     </nav>
-    <input type="search" placeholder="Buscar..." style="padding:6px;border-radius:5px;border:none;">
+    <input type="search" placeholder="Buscar..." class="search">
   </header>
 
   <section class="hero">
@@ -156,36 +25,36 @@
       <h2>Todo sobre el True Crime.<br>En un solo lugar.</h2>
       <p>Explora los casos más impactantes de la historia real: asesinatos, desapariciones, misterios sin resolver y perfiles criminales.</p>
       <div class="buttons">
-        <a href="#">Explorar casos</a>
-        <a href="#">Ver archivos</a>
+        <a href="casos.html">Explorar casos</a>
+        <a href="linea-temporal.html">Ver archivos</a>
       </div>
     </div>
   </section>
 
   <section class="cases">
-    <div class="case-card">
-      <img src="https://phantom-elmundo.unidadeditorial.es/704d82a629ca97125c2852b1017f74bf/resize/414/f/jpg/assets/multimedia/imagenes/2019/03/20/15531104916202.jpg" alt="Ted Bundy">
+    <a href="Bundy.html" class="case-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Ted_Bundy_headshot.jpg" alt="Ted Bundy">
       <div class="case-info">
         <h3>Ted Bundy</h3>
         <p>El asesino de adolescentes que era capaz de jugar con la mente de los demás.</p>
       </div>
-    </div>
+    </a>
 
-    <div class="case-card">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPfAZ659l8m6bH1sDKM1lnG11us5zfSywQfg&s" alt="John Wayne Gacy">
+    <a href="#" class="case-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/John_Wayne_Gacy_Mugshot.jpg" alt="John Wayne Gacy">
       <div class="case-info">
         <h3>John Wayne Gacy</h3>
-        <p>Pogo, el payaso asesino. Culpable de la muerte de demasiados pequeños.</p>
+        <p>Pogo, el payaso asesino. Culpable de la muerte de muchos pequeños.</p>
       </div>
-    </div>
+    </a>
 
-    <div class="case-card">
-      <img src="https://i0.wp.com/www.idler.co.uk/wp-content/uploads/2017/11/charles-manson.jpg?resize=746%2C488&ssl=1" alt="Charles Manson">
+    <a href="#" class="case-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Charles_Manson_1968.jpg" alt="Charles Manson">
       <div class="case-info">
         <h3>Charles Manson</h3>
         <p>Crió una secta para matar.</p>
       </div>
-    </div>
+    </a>
   </section>
 
   <footer>
