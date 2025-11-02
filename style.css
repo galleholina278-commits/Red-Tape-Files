@@ -112,6 +112,24 @@ nav a.active {
   color: #ffcc00;
 }
 
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
 footer {
   text-align: center;
   padding: 20px;
