@@ -3,28 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Línea Temporal - Red Tape Files</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Línea Temporal | Red Tape Files</title>
+  <link rel="stylesheet" href="linea-temporal.css">
 </head>
+
 <body>
-  <header>
-    <h1>Línea Temporal de Crímenes</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="casos.html">Casos y criminales</a>
-      <a href="linea-temporal.html" class="active">Línea temporal</a>
-      <a href="juicios.html">Juicios</a>
-      <a href="psicologia-criminal.html">Psicología criminal</a>
-    </nav>
-  </header>
 
-  <section class="container">
-    <p>
-      Una cronología detallada de los crímenes más impactantes, año por año.
-      Recorre los archivos desde los 60’s hasta la actualidad y observa cómo evolucionaron los patrones criminales y las investigaciones.
-    </p>
-  </section>
+<header>
+  <h1>RED TAPE FILES</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="casos.html">Casos y criminales</a>
+    <a href="linea-temporal.html" class="active">Línea temporal</a>
+    <a href="juicios.html">Juicios</a>
+    <a href="psicologia-criminal.html">Psicología criminal</a>
+  </nav>
+  <input type="search" placeholder="Buscar..." class="search">
+</header>
 
-  <footer>© 2025 Red Tape Files</footer>
+<section class="titulo">
+  <h2>Línea</h2>
+  <div class="tag">TEMPORAL</div>
+</section>
+
+<section class="timeline-wrapper">
+
+  <button class="arrow left">❮</button>
+
+  <div class="timeline" id="timeline">
+
+    <!-- ITEM 1 -->
+    <div class="event">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Jack_the_Ripper_1888.jpg">
+      <h3>Siglo XIX</h3>
+      <p>Jack el Destripador aterrorizó Whitechapel con asesinatos brutales nunca resueltos.</p>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div class="event">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Ed_Gein.jpg">
+      <h3>Siglo XX</h3>
+      <p>Ed Gein inspiró múltiples películas de terror por sus crímenes espeluznantes.</p>
+    </div>
+
+    <!-- ITEM 3 -->
+    <div class="event">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Ted_Bundy_headshot.jpg">
+      <h3>1970</h3>
+      <p>Ted Bundy manipuló y asesinó a decenas de mujeres mientras mantenía doble vida.</p>
+    </div>
+
+    <!-- ITEM 4 -->
+    <div class="event">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/John_Wayne_Gacy_Mugshot.jpg">
+      <h3>1980</h3>
+      <p>John Wayne Gacy, el payaso asesino, fue responsable del homicidio de más de 30 jóvenes.</p>
+    </div>
+
+    <!-- ITEM 5 -->
+    <div class="event">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Charles_Manson_1968.jpg">
+      <h3>1969</h3>
+      <p>Charles Manson lideró una secta que cometió asesinatos estremecedores.</p>
+    </div>
+
+  </div>
+
+  <button class="arrow right">❯</button>
+
+</section>
+
+<footer>
+  © 2025 Red Tape Files | True Crime Project
+</footer>
+
+<script src="linea-temporal.js"></script>
+
 </body>
 </html>
